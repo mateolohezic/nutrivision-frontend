@@ -1,5 +1,6 @@
 :root {
     --blanco: rgb(255, 255, 255);
+    --blanco-oscuro: rgb(240, 240, 240);
     --menta-claro: rgb(201, 253, 215);
     --menta: rgb(103, 204, 185);
     --menta-hover: rgb(103, 204, 185, 0.6);
@@ -70,11 +71,12 @@ text-overflow: ellipsis;
 }
   
 ::-webkit-scrollbar-thumb {
-    background-color: var(--light-card-bg-color);
+    background-color: rgba(200, 200, 200, 1);
+    border-radius: 0.5rem;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(80, 80, 80, 1);
+    background-color: rgba(150, 150, 150, 1);
 }
   
 input:-webkit-autofill,
