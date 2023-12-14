@@ -1,0 +1,67 @@
+.inputBuscadorPacientes{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.inputBuscadorPacientes label{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.inputBuscadorPacientes div{
+    position: relative;
+    width: min(400px, 100%);
+}
+
+.inputBuscadorPacientes div input{
+    width: min(400px, 100%);
+    height: 2.5rem;
+    background-color: var(--blanco-oscuro);
+    border: 1px solid var(--blanco-oscuro);
+    border-radius: 0.25rem;
+    padding-inline: 0.75rem 2.25rem;
+    color: var(--color-fuente);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 500;
+    transition: all .2s ease;
+}
+
+.inputBuscadorPacientes div input:focus{
+    background-color: var(--blanco-oscuro);
+    border: 1px solid var(--menta);
+}
+
+.inputBuscadorPacientes div input::placeholder{
+    color: #A8A8A8;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.inputBuscadorPacientes div button{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBuscadorPacientes div button svg{
+    opacity: 0.6;
+    transition: all .3s ease;
+}
+
+.inputBuscadorPacientes div button:hover  svg{
+    opacity: 0.8;
+    transform: scale(1.05);
+}

@@ -1,0 +1,69 @@
+.herramientasHome{
+    grid-area: herramientas;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.contenedorHerramientasHome{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding-right: 0.5rem;
+    position: relative;
+    right: -0.5rem;
+}
+
+.cardHerramientaHome{
+    text-decoration: none;
+    width: calc((100% - 4rem)/5);
+}
+
+.cardHerramientaHome article{
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    transition: all .1s ease;
+}
+
+.cardHerramientaHome:hover article{
+    transform: scale(1.05);
+}
+
+.cardHerramientaHome article div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--blanco-oscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.cardHerramientaHome img{
+    text-decoration: none;
+    width: 55%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.cardHerramientaHome h3{
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+}

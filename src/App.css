@@ -1,6 +1,6 @@
 :root {
     --blanco: rgb(255, 255, 255);
-    --blanco-oscuro: rgb(240, 240, 240);
+    --blanco-oscuro: rgb(225, 225, 225);
     --menta-claro: rgb(201, 253, 215);
     --menta: rgb(103, 204, 185);
     --menta-hover: rgb(103, 204, 185, 0.6);
@@ -20,7 +20,7 @@
     border: none;
 }
 
-h1, h2, h3, h4, h5, h6, ul, ol {
+h1, h2, h3, h4, h5, h6, ul, ol, p{
     margin: 0;
     padding: 0;
 }
@@ -79,19 +79,18 @@ text-overflow: ellipsis;
     background-color: rgba(150, 150, 150, 1);
 }
   
+input:focus,
+inptu:focus-visible{
+    outline: none;
+    border: none;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: white !important;
-}
-  
-.form-control:focus {
-    box-shadow: none;
-    border-color: none;
-    border: none;
-    outline: none;
+    -webkit-text-fill-color: var(--color-fuente) !important;
 }
   
 input[type=search]::-ms-clear {
