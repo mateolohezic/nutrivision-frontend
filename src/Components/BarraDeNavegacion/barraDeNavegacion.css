@@ -7,15 +7,16 @@
     background-color: var(--blanco);
     position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     padding-top: 1.5rem;
+    display: inline;
 }
 
 .logoNavbarPrincipal{
     width: 100%;
     text-align: start;
+    padding-top: 1.5rem;
     padding-inline: 1.5rem;
 }
 

@@ -1,6 +1,8 @@
 .contenedorMain{
     width: calc(100% - 300px);
     padding: 2rem;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .contenedorHome{
@@ -11,7 +13,7 @@
         "turnos pacientes pacientes"
         "herramientas herramientas alertas";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, calc(50vh - 4rem));
+    grid-template-rows: repeat(2, calc(50vh - 3rem));
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
     gap: 2rem;
